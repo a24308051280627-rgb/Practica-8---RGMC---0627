@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AprendeOnline</title>
+    <title>PRACTICA 8</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #333; }
         header { background: #fff; border-bottom: 2px solid #e0e0e0; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; }
@@ -18,8 +18,7 @@
         .grid-cursos { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
         .card { background: white; border: 1px solid #ddd; border-radius: 8px; width: 260px; padding: 15px; }
         .card img { width: 100%; height: 140px; object-fit: cover; border-radius: 4px; }
-        
-        /* Modal HTML5 (<dialog>) */
+     
         dialog { border: none; border-radius: 8px; padding: 25px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
         dialog::backdrop { background: rgba(0, 0, 0, 0.6); }
 
@@ -33,21 +32,21 @@
 <body>
 
     <header>
-        <a href="#" class="logo">AprendeOnline</a>
+        <a href="#" class="logo">Coursera</a>
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#cursos">Cursos</a>
             <a href="#contacto">Contacto</a>
         </nav>
         <div>
-            <button class="btn-login" onclick="modalReg.showModal()">Iniciar Sesión</button>
-            <button class="btn-primary" onclick="modalReg.showModal()">Únete gratis</button>
+            <button class="btn-login" onclick="modalReg.showModal()">Iniciar Sesion</button>
+            <button class="btn-primary" onclick="modalReg.showModal()">Unete gratis</button>
         </div>
     </header>
 
     <div id="inicio" class="hero">
         <h1>Avanza en tu carrera profesional</h1>
-        <p>Aprende las habilidades más demandadas.</p>
+        <p>Aprende las habilidades mas demandadas.</p>
         <button class="btn-primary" onclick="modalReg.showModal()">Empieza Ahora</button>
     </div>
 
@@ -58,7 +57,7 @@
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&q=80" alt="HTML">
                     <h3>HTML5 y CSS3</h3>
-                    <p>Diseña tus primeras páginas web.</p>
+                    <p>Diseña tus primeras paginas web.</p>
                 </div>
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80" alt="JS">
@@ -69,16 +68,15 @@
         </section>
     </main>
 
-    <!-- 1. MODAL DE REGISTRO -->
     <dialog id="modalReg">
         <form id="formReg" method="dialog" onsubmit="formReg.reset(); modalReg.close(); modalExito.showModal();">
             <h3 style="margin-top:0; color:#0056b3;">Acceso a la Cuenta</h3>
             
             <label>Nombre completo:</label>
-            <input type="text" placeholder="Ej. María García" required>
+            <input type="text"  required>
 
             <label>Edad:</label>
-            <input type="number" placeholder="Ej. 22" required>
+            <input type="number"  required>
 
             <label>Correo electrónico:</label>
             <input type="email" placeholder="correo@ejemplo.com" required>
@@ -88,17 +86,16 @@
         </form>
     </dialog>
 
-    <!-- 2. MODAL DE CONFIRMACIÓN (Guardado con éxito) -->
     <dialog id="modalExito">
         <div style="text-align: center;">
-            <h3 style="color: #28a745; margin-top:0;">¡Datos Guardados Exitosamente!</h3>
+            <h3 style="color: #28a745; margin-top:0;">Tus datos se guardaron </h3>
             <p style="font-size: 14px; color: #555;">Tu registro se ha completado correctamente.</p>
             <button class="btn-primary" onclick="modalExito.close()">Aceptar y Cerrar</button>
         </div>
     </dialog>
 
     <footer id="contacto">
-        <p>&copy; 2026 AprendeOnline | Ramirez Gomez Maria Camila - 5-I</p>
+        <p>&copy; 2026 Coursera | Ramirez Gomez Maria Camila - 5-I - 24308051280627 </p>
     </footer>
 
 </body>
